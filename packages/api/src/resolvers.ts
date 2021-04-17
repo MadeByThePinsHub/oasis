@@ -1,7 +1,13 @@
-import { join } from 'path';
-import { mergeResolvers } from '@graphql-tools/merge';
-import { loadFilesSync } from '@graphql-tools/load-files';
+import { join } from "path";
+import { mergeResolvers } from "@graphql-tools/merge";
+import { loadFilesSync } from "@graphql-tools/load-files";
 
-const resolversArray = loadFilesSync(join(__dirname, './modules'), { extensions: ['js'] });
+const dirname = process.env.PROJECT_ROOT;
+const resolversArray = loadFilesSync(
+  join(dirname, "/packages/api/dist/modules"),
+  {
+    extensions: ["js"],
+  }
+);
 
 export default mergeResolvers(resolversArray);
