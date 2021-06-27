@@ -1,0 +1,12 @@
+schema: ../api/schema.gql
+documents: ./src/**/*.gql
+generates:
+  generated/index.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+      - typescript-document-nodes
+    config:
+      withHooks: true
+      noGraphQLTag: true

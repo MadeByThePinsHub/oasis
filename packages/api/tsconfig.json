@@ -1,8 +1,25 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@entities/*": ["src/entities/*"],
+      "@lib/*": ["src/lib/*"],
+      "@middleware/*": ["src/middleware/*"],
+      "@auth/*": ["src/auth/*"],
+      "@config/*": ["src/config/*"],
+      "@enums/*": ["src/enums/*"],
+      "@utils/*": ["src/utils/*"],
+      "@root/*": ["src/*"]
+    },
     "rootDir": "src",
     "outDir": "dist",
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["ESNext"],
     "esModuleInterop": true,
-    "declaration": true
-  }
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "importHelpers": true
+  },
 }

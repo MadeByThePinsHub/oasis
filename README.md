@@ -1,61 +1,26 @@
----
+# Oasis
 
-## 🌴 Branches
-- ```prod:``` dont touch, production code
-- ```staging:``` testing/development; do changes here here
-- ```old:``` v1.0 of oasis (no longer used)
+<img src='https://img.shields.io/badge/License-MIT-blue.svg' > [![Docker Image CI](https://github.com/oasis-sh/oasis/actions/workflows/docker-image.yml/badge.svg)](https://github.com/oasis-sh/oasis/actions/workflows/docker-image.yml)
 
-## 🧱 Structure
+## Structure
+- [`packages/web`](/packages/web) - Web App
+- [`packages/desktop`](/packages/desktop) - Desktop App
+- [`packages/mobile`](/packages/mobile) - Capacitor/Ionic Mobile App
+- [`packages/ui`](/packages/ui) - UI Components
+- [`packages/api`](/packages/api) - Backend and GraphQL API
+- [`packages/react-gql`](/packages/react-gql) - React GraphQL Hooks
+- [`packages/sdk`](/packages/sdk) - API Client
+- [`packages/parser`](/packages/parser) - Parser
+- [`packages/cli`](/packages/cli) - CLI
 
-| Folder                               |      Description       |
-| :----------------------------------: | :-------------------:  |
-| [docs](/docs)                      |     Documentation      |
-| [web](/packages/web)               |   Next.js Frontend     |
-| [desktop](desktop)                 |    Electron Wrapper    |
-| [api](/packages/api)               |     GraphQL API        |
-| [client-gql](/packages/client-gql) |  Client Side GQL Hooks |
-| [puppeteer](/packages/puppeteer)   |   Puppeteer Testing    |
-
-## 🚀 Contributions
-
+## Contributions
 Oasis is open to contributions, but we recommend creating an issue or replying in a comment to let us know what you are working on first that way we don't overwrite each other or have many people adding the same feature/solving the same issue. <br/>
 
-Interested in contributing? Read [CONTRIBUTING.md](/docs/CONTRIBUTING.md) for details on how to get started.
+**Interested in contributing?** <br/>
+Take a look at our [documentation](/docs) for more information on how to get started! 🎉
 
-## 🔨 Running Locally
-```bash
-# Install dependencies
-$ yarn
+## Code of Conduct
+Read the Oasis [Code of Conduct](/.github/CODE_OF_CONDUCT.md) for more details.
 
-# Run all workspaces
-$ yarn dev
- 
-# Run Next.js Frontend
-$ yarn dev:web
- 
-# Run client-side GQL Hooks
-$ yarn dev:gql
-```
-
-## 👋🏻 Maintainers 
-- **Web:** [heybereket](https://github.com/heybereket), [goldyydev](https://github.com/goldyydev), [samarmohan](https://github.com/samarmohan), and [notnickdev](https://github.com/notnickdev)
-- **Desktop:** [amitojsingh366](https://github.com/amitojsingh366)
-- **Design:** [coderinblack08](https://github.com/coderinblack08)
-- **API:** [vishy-dev](https://github.com/vishy-dev), and [Ongshu777](https://github.com/Ongshu777)
-
-## ⌛ Status
-🟩 Early Development: Started building the project. <br>
-🟩 Development: Movement/re-write using NextJS/TailwindCSS <br>
-🟩 Migration Completion: Finished the migration! <br>
-🟩 TypeScript: Converted codebase from JS > TS <br>
-🟨 GraphQL API: Work on releasing the Oasis API publicly <br>
-🟨 Redesign/write: 2nd site rewrite/implementation of the new redesign <br>
-🟨 Alpha/Beta Testing (mostly trying to fix and solve bugs) <br>
-🟨 Early Release: Soft Launch on Twitter <br>
-🟨 Official Launch <br>
-
-## ✍🏻 Code of Conduct
-Read the Oasis [Code of Conduct](/.github/CODE_OF_CONDUCT.md) for more details. 
-
-## 📄 License
-Oasis is open-source and is under the [MIT License](LICENSE). 
+## License
+Oasis is open-source and is under the [MIT License](LICENSE).
